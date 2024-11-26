@@ -1,9 +1,9 @@
 compile:
-	gcc -o parent parent.c
+	@gcc -o parent parent.c
 parent.o: parent.c
-	gcc -c parent.c
+	@gcc -c parent.c
 run: parent
-	./parent
+	@./parent
 clean:
-	rm parent
-	rm *.o
+	@rm parent
+	@rm *.o
